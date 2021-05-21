@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+:root{ /*Utlizar cor como variável*/
+    
+    --vermelho:#E50914;
+    --preta:#141414;
+
+}
+
+*{ /*Resetar CSS*/
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Para que os elmentos tenham o tamanho que eu passar, não rompendo a caixa*/
+
+}
+
+/* Base */
+
+body{ /*Corpo*/
+
+    background: var(--preta); /*Utilizando variável*/
+    font-family: 'Times New Roman', Times, serif;
+    color: white; /*Filhos*/
+
+}
+
+header .container{ /*Cabeçalho*/
+
+    display: flex; /* flex box - alinhar elmentos em tela, flex-direction vem automaticamente no row. (Em linha - - - -) */
+    flex-direction: row;
+    align-items: center; /* Centralizar na tela */
+    justify-content: space-between; /* Jogar pra direita com distância entre h2 e nav*/
+
+}
+
+header .logo{
+    margin-left: 5px; /* Descolar da esquerda*/
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+
+}
+
+header nav a{
+    text-decoration: none; /* Tira sublinhado */
+    color: #AAA;
+    margin-right: 10px; /* Distanciar o conteudo no menu*/
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* Filme principal */
+
+.filme-principal{
+
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Sempre segue a direção do flex-direction*/
+    align-items: flex-start; /* Começam sempre da esquerda */
+
+}
+
+.filme-principal .descricoes{
+    margin-bottom: 40px; /* distancia dos botoes */
+}
+
+.titulo{
+    font-size: 40px;
+}
+
