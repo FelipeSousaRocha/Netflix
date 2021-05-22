@@ -20,7 +20,7 @@
 body{ /*Corpo*/
 
     background: var(--preta); /*Utilizando variável*/
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white; /*Filhos*/
 
 }
@@ -70,10 +70,67 @@ header nav a:hover{
 }
 
 .filme-principal .descricoes{
+
+    margin-top: 10px;
     margin-bottom: 40px; /* distancia dos botoes */
+
 }
 
 .titulo{
+
+    margin-top: 15%; /* Melhor trabalhar com %*/
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
+.botao{
+
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px; /*15px cima,  direita, baixo e esquerda*/
+    margin-right: 15px; /* Separa mais */
+    font-size: 12px;
+
+    cursor: pointer; /* Mostrar que é clicavel */ 
+    transition: .3s ease all; /* Transição de tempo ao passar o mouse */ 
+}
+
+.botao:hover{
+
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+
+    margin-right: 8px;
+
+}
+
+/* # WRAPPER = envelopar , wrapper != container */
+
+.container{
+
+    margin-left: 20px;
+
+}
+
+.filme-principal .container{
+
+    width: 70%; /* Largura do container -  texto ir até 70% da tela */
+
+}
+
+.box-filme{
+    height: 100%; /* tamanho real */
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
