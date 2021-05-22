@@ -134,3 +134,28 @@ header nav a:hover{
 .carrosel-filmes{
     margin-top: 5px;
 }
+
+.capa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa img{
+    margin-top: 10px;
+    height: 50%;
+    width: 50%;
+    background-size: cover;
+}
+
+.titulo-2{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.text{
+    margin-top: 2%;
+    text-align: justify;
+    margin-right: 2%;
+}
